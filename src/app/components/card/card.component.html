@@ -1,0 +1,8 @@
+<div class="card" (click)="onCardClick()" [@cardFlip]="data.state">
+  <div class="face back" [@cardRemove]="data.state">
+    <img src="assets/images/back.png" />
+  </div>
+  <div class="face front" [@cardRemove]="data.state">
+    <img [src]="'assets/images/' + data.imageId + '.png'" />
+  </div>
+</div>
